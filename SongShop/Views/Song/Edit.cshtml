@@ -1,0 +1,88 @@
+﻿@using SongShop.Models.ViewModels;
+@model SongVM
+
+
+<div class="container mt-5 mb-5">
+
+    <div class="row d-flex align-items-center justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card bg-primary bg-gradient mb-3">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="text-white py-2">Edit Song</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card px-5 py-5">
+
+                <form method="post" class="row" enctype="multipart/form-data">
+                    <input asp-for="Song.Id" hidden />
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Song.Title class="p-0"></label>
+                        <input asp-for=Song.Title type="text" class="form-control">
+                        <span asp-validation-for="Song.Title" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Song.Author class="p-0"></label>
+                        <input asp-for=Song.Author type="text" required class="form-control">
+                        <span asp-validation-for="Song.Author" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Song.Description class="p-0"></label>
+                        <input asp-for=Song.Description type="text" required class="form-control">
+                        <span asp-validation-for="Song.Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Song.Price class="p-0"></label>
+                        <input asp-for=Song.Price type="number" class="form-control">
+                        <span asp-validation-for="Song.Price" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Genres class="p-0" asp></label>
+                        <select asp-for=Genres class="form-select" multiple>
+                            @foreach (string genre in ViewBag.Genres)
+                            {
+                                if(@Model.Song.Type.Contains(genre))
+                                {
+                                    <option selected value="@genre">@genre</option>
+                                }
+                                else
+                                {
+                                    <option value="@genre">@genre</option>
+                                }
+                            }
+                        </select>
+                        <span asp-validation-for="Song.Type" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3 row p-1">
+                        <label asp-for=Song.ImageUrl class="p-0"></label>
+                        <input asp-for=Song.ImageUrl type="text" class="form-control" hidden>
+                        <input type="file" name="file" class="form-control">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3 p-1 signup">Update!</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

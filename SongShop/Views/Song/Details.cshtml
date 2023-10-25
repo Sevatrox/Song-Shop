@@ -1,0 +1,36 @@
+﻿@model Song
+
+<div class="d-flex justify-content-center align-items-center">
+    <div class="col-lg-3 col-sm-6">
+        <div class="row p-2">
+            <div class="col-12 p-1">
+                <div class="card border-0 p-3 shadow border-top border-5 rounded" style="height: 610px">
+                    <img src="@Model.ImageUrl" height="220px" class="card-img-top rounded" />
+
+                    <div class="pl-1" style="height: 280px">
+                        <p class="card-title h5 text-dark opacity-75 text-uppercase text-center">@Model.Title</p>
+                        <p class="card-title text-warning text-center">by <b>@Model.Author</b></p>
+                        <p class="card-title text-center">Chorus: <b>@Model.Description</b></p>
+                        <p class="card-title text-center">Genres: <b>@Model.Type</b></p>
+                        <p class="text-dark opacity-75 text-center mb-0">Price: <b>€ @Model.Price</b></p>
+                    </div>
+                    @if (!User.IsInRole("Seller"))
+                    {
+                        <div>
+                            <a asp-action="Index" asp-controller="Home" class="btn btn-dark bg-gradient border-0 form-control mb-1">Go back to all songs</a>
+                        </div>
+                        <div>
+                            <a asp-action="BuySong" asp-controller="Song" asp-route-id="@Model.Id" class="btn btn-primary bg-gradient border-0 form-control">Buy song!</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div>
+                            <a asp-action="Index" asp-controller="Home" class="btn btn-dark bg-gradient border-0 form-control mt-5">Go back to all songs</a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

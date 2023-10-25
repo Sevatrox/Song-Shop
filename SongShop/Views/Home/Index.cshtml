@@ -1,0 +1,42 @@
+﻿<label>
+	Search: <input class="" type="text" id="txtSearch" />
+</label>
+<div id="gridSongs"></div>
+
+
+@section scripts {
+	<script>
+		$(document).ready(function () {
+			getUsers();
+
+			$('#txtSearch').on('keyup', () => {
+				getUsers();
+			});
+
+			$('.buyButton').on('click', function () {
+				id = $(this).data("id");
+				$('.modal-body').html();
+				$("#myModal").modal("show");
+				$("#songId").val(id);
+			});
+
+		});
+
+		function getUsers() {
+			$.ajax({
+				url: '@Url.Action("SearchSongs", "Song")',
+				datatype: 'html',
+				method: 'GET',
+				data: { searchText: $('#txtSearch').val() },
+				async: false,
+				success: function (result) {
+					$('#gridSongs').html('').html(result);
+				},
+				error: function (err) {
+					console.log(err);
+				}
+			})
+		}
+
+	</script>
+}

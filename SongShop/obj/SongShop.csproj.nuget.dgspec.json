@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop\\SongShop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\SongShop.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\SongShop.DataAccess.csproj",
+        "projectName": "SongShop.DataAccess",
+        "projectPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\SongShop.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\ljubo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ljubo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\SongShop.Models.csproj": {
+                "projectPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\SongShop.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\SongShop.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\SongShop.Models.csproj",
+        "projectName": "SongShop.Models",
+        "projectPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\SongShop.Models.csproj",
+        "packagesPath": "C:\\Users\\ljubo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ljubo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop\\SongShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop\\SongShop.csproj",
+        "projectName": "SongShop",
+        "projectPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop\\SongShop.csproj",
+        "packagesPath": "C:\\Users\\ljubo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ljubo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\SongShop.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\ljubo\\OneDrive\\Documents\\Ljubo\\Kursevi\\NET Core MVC\\SongShop\\SongShop.DataAccess\\SongShop.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
